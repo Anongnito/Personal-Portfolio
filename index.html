@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!--This website is copyrighted by Ago Ahas.-->
+<!--Optimised for Google Chrome, Mozilla Firefox, Safari, Internet Explorer 10 & 11 and mobile. -->
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../CSS/jquery.fullPage.css"/>
+    <link href="../CSS/lightbox.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="keywords" content="Web Developer, Full-Stack Developer, Game Developer, HTML, CSS, Java, JavaScript ">
+    <meta name="author" content="Ago Ahas">
+    <meta name="viewport" content="width=720, maximum-scale=1.0" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../JS/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="../JS/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="../JS/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="../JS/lightbox.min.js"></script>
+    <script src="../JS/functionality.js"></script>
+</head>
+<body>
+<div id="loadingScreen">
+    <div class="loadingBall" id="firstBall"></div>
+    <div class="loadingBall round" id="secondBall"></div>
+    <h1 class="typewriter">Loading</h1>
+</div>
+<nav>
+    <ul>
+        <li><a id="introButton" href="javascript:moveToIntro();">INTRO</a></li>
+        <li><a id="aboutMeButton" href="javascript:moveToAboutMe();">ABOUT ME</a></li>
+        <li><a id="portfolioButton" href="javascript:moveToPortfolio();">PORTFOLIO</a></li>
+        <li><a id="contactButton" href="javascript:moveToContact();">CONTACT</a></li>
+    </ul>
+</nav>
+
+<div id="fullpage">
+<div id="intro" class="section">
+
+    <h1>Welcome to the portfolio of <span>Ago Ahas</span><br><span>the swiss-knife of development</span></h1>
+    <video loop preload="auto" id="bgVideo">
+        <source src="../VIDEO/aboutMeVideo.mp4" type="video/mp4">
+    </video>
+    <a href="javascript:moveToAboutMe()">
+        <div id="introBottomButton" class="buttonBottom"></div>
+    </a>
+</div>
+<div id="aboutMe" class="section">
+    <a href="javascript:moveToIntro()">
+        <div class="buttonTop"></div>
+    </a>
+    <ul id="aboutMeContent">
+        <li id="introduction" class="hoverIcon le">
+            <h2>Hi! Welcome to the portfolio page of a full-stack developer - Ago Ahas<br></h2>
+
+            <p>
+                Ago is a developer and a certified IT specialist, with a range of experiences working in front-end /
+                back-end / full-stack and game development. The professional experience also expands in to creating
+                gaming related content such as news and reviews, as well as participating in organizing the biggest
+                Baltics gaming event. Due to a great variety of projects, Ago has also acquired knowledge on how to run
+                and grow start-ups, as well as to take part in development processes in big businesses, working as a
+                developer alongside multiple teams of designers, architects, project managers and fellow developers.
+            </p>
+        </li>
+        <li id="workDoneOverview" class="hoverIcon le">
+            <h2>Brief introduction to Ago<br></h2>
+
+            <p>
+                Being a technological fanatic and a devoted veteran gamer, Ago found his passion for teamwork,
+                strategizing and development at a very early age. Early skills of coordinating teams of 10 (or more) and
+                leading them into epic battles in the virtual world, were later applied in professional environment, to
+                motivate and organize teams in the most efficient manner. Combination of interest for tech and his
+                problem solving skills which were applied to repair and assemble computers, have matured into his
+                interest to fix &quot;that one annoying&quot; bug and to come up with solutions for projects
+                optimization, which is
+                why there is a chance of seeing him in a dark office, when everyone is left, sipping on that coffee in
+                the blue light of a monitor.
+            </p>
+        </li>
+        <li id="techknowledge" class="hoverIcon le">
+            <h2>Technical wisdom<br></h2>
+
+            <p>
+                JavaScript, Java, HTML5, CSS3, jQuery, Ajax,
+                Hibernate, Bootstrap, Oracle SQL database, Angular, Struts, Spring, Wordpress,
+                Liquibase, Ruby, WatirSplash, Watir/Rspec, Hudson, TDD, XP, Git
+                Unity3D, Jira, Pivotal Tracker, Adobe Photoshop/Premiere.
+            </p>
+        </li>
+
+        <li id="pleaseDo" class="hoverIcon le">
+            <h2>Dear Visitor!<br></h2>
+
+            <p>
+                Feel free to traverse around the website and to try out the handy mobile version.
+                If you would like me to join your team or for any other offers and inquiries please visit the contact
+                page.
+            </p>
+        </li>
+    </ul>
+    <a href="javascript:moveToPortfolio()">
+        <div id="aboutMeBottomButton" class="buttonBottom"></div>
+    </a>
+
+</div>
+<div id="portfolio" class="section">
+<a href="javascript:moveToAboutMe()">
+    <div class="buttonTop"></div>
+</a>
+
+<div class="port slide" id="port1">
+    <div class="content">
+        <div class="portHeading">
+            <a href="http://www.level1.ee" target="_blank"><h1>LEVEL1.EE</h1><span>www.level1.ee</span></a>
+
+            <h2>2010 - PRESENT</h2>
+        </div>
+        <div class="bonusContent">
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>M&aumlngude&Ouml&Ouml (Gaming Night) - the biggest gaming and game development promoting event in the
+                    Baltic States. The event includes exposition sections where game developers and sponsors can show
+                    their products. 3 cinema screens as well as over 20 smaller screens and monitors are presented to
+                    allow visitors to participate in competitions.</p>
+            </div>
+            <div class="youtube exampleInfo" id="Cr7lmbcG0HY" style="width:50%; height: 30%;"></div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>Sony Playstation 4 presentation and un-boxing in our sponsor's store, when it was firstly released in
+                    Estonia. The video reviews the Playstation 4, its hardware, the size comparison to previous
+                    generations and how well it performs together with the Playstation Vita.</p>
+            </div>
+            <div class="youtube exampleInfo" id="RZ_UILX1k4M" style="width:50%; height: 30%;"></div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>An example of the weekly gaming news. The subjects discussed are Anders Breivik, "Last of Us"
+                    downloadable content and making of, Take One, Doom 4 Beta, Unity3D training videos as well as
+                    promoting three Level1 events.</p>
+            </div>
+            <div class="youtube exampleInfo" id="ohnvN2COGlc" style="width:50%; height: 30%;"></div>
+        </div>
+        <div class="workInformation">
+            <div class="textInformation">
+                <div class="textInfoParts">
+                    <h2>
+                        WHO
+                    </h2>
+                    <article>
+                        Company representative, co-founder and content creator for Level1. Level1 is an Estonian website
+                        and a community which promotes video games, virtuality and also aims to create a network of
+                        people interested in video games, while introducing gaming as a positive and educational aspect
+                        of our culture.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        WHAT
+                    </h2>
+                    <article>
+                        Consulting on website development and design, meeting as well as cooperating and negotiating
+                        with sponsors, hosting and organizing gaming events, video editing, creating YouTube game
+                        reviews, taking interviews, participating in audio podcasts, delivering weekly gaming news and
+                        live broadcasting gameplay to Twitch.tv.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        GAINED
+                    </h2>
+                    <article>
+                        Expanded knowledge in HTML, CSS, jQuery, Google Analytics, Wordpress, starting and growing a
+                        start-up, requiring and liaising with sponsors, public speaking, event organisation and video
+                        editing using Adobe Premiere.
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="port slide" id="port2">
+    <div class="content">
+        <div class="portHeading">
+            <a href="http://www.redeye.com" target="_blank"><h1>RED EYE INTERNATIONAL LTD</h1>
+                <span>www.redeye.com</span></a>
+
+            <h2>2014 - PRESENT</h2>
+        </div>
+        <div class="bonusContent">
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>"Choosing a CV" page was redesigned from a wide layout to a smaller accordion. It directed more
+                    traffic to client's account log-in section while making the uploading a CV region for unregistered
+                    users more accessible.</p>
+            </div>
+            <div class="exampleInfo">
+
+                <a href="../IMG/hays.jpg" class="exampleImg" data-lightbox="redeye-examples"><img
+                        src="../IMG/hays.jpg">
+
+                    <div class="play image"></div>
+                </a>
+            </div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>Clients airpack selection was changed from a big top banner to a small, always fixed section which is
+                    always there even if scrolled. "More details" fields were replaced with logical and prominent icons.
+                    Those changes gave a significant improvement to total revenue generated and showed uplift on
+                    conversion in users investing into airpacks.</p>
+            </div>
+            <div class="exampleInfo">
+
+                <a href="../IMG/monarch.jpg" class="exampleImg" data-lightbox="redeye-examples"><img
+                        src="../IMG/monarch.jpg">
+
+                    <div class="play image"></div>
+                </a>
+            </div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>Red Eye's clients' mobile home page was improved to give more prominence to product categories and to
+                    direct users into the first step of the purchasing funnel - choosing a product.</p>
+            </div>
+            <div class="exampleInfo">
+
+                <a href="../IMG/radley.jpg" class="exampleImg" data-lightbox="redeye-examples"><img
+                        src="../IMG/radley.jpg">
+
+                    <div class="play image"></div>
+                </a>
+            </div>
+        </div>
+        <div class="workInformation">
+            <div class="textInformation">
+                <div class="textInfoParts">
+                    <h2>
+                        WHO
+                    </h2>
+                    <article>
+                        Optimisation Consultant in an international digital marketing company in London, which
+                        specialises in
+                        marketing automation, email marketing and user experience. Working on big clients e.g. Radley,
+                        Monarch, Haven Holidays, Hays Recruitment and Skype.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        WHAT
+                    </h2>
+                    <article>
+                        Developing pages with jQuery for A/B/N testing, personalisation, taking Photoshop designs and
+                        converting them into HTML/CSS assets, assessing feasibility of making adjustments to pages based
+                        on user experience findings, working closely with the company's user experience team to generate
+                        ideas for optimising clients' websites, consulting clients.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        GAINED
+                    </h2>
+                    <article>
+                        Advanced knowledge of JavaScript, jQuery, HTML, CSS, Photoshop, Optimizely, Monetate, liaising
+                        with clients' development and design teams.
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="port slide" id="port3">
+    <div class="content">
+        <div class="portHeading">
+            <a href="http://www.elion.ee" target="_blank"><h1>ELION ENTERPRISES</h1><span>www.elion.ee</span></a>
+
+            <h2>2013 - 2014</h2>
+        </div>
+        <div class="bonusContent">
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>The product ordering and customer details funnel. Professional responsibilities were working on the
+                    contact information and contract part of the check-out funnel - connecting the information from the
+                    server via the back-end, to distribute the correct content to users depending on what products were
+                    selected.</p>
+
+            </div>
+            <div class="exampleInfo">
+
+                <a href="../IMG/elionPreview1.jpg" class="exampleImg" data-lightbox="elion-examples"><img
+                        src="../IMG/elionPreview1.jpg">
+
+                    <div class="play image"></div>
+                </a>
+            </div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>Service selection area where you can choose what internet, TV and phone package you would like to
+                    order. Professional tasks were taking part of changing the back-end architecture from Struts to
+                    Spring.</p>
+            </div>
+            <div class="exampleInfo">
+
+                <a href="../IMG/elionPreview2.jpg" class="exampleImg" data-lightbox="elion-examples"><img
+                        src="../IMG/elionPreview2.jpg">
+
+                    <div class="play image"></div>
+                </a>
+            </div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+                <p>An example of a service information page which can be found on the website. Some task requirements
+                    were to create and change the content through the content management system which was developed
+                    in-house.</p>
+            </div>
+            <div class="exampleInfo">
+
+                <a href="../IMG/elionPreview3.jpg" class="exampleImg" data-lightbox="elion-examples"><img
+                        src="../IMG/elionPreview3.jpg">
+
+                    <div class="play image"></div>
+                </a>
+            </div>
+        </div>
+        <div class="workInformation">
+            <div class="textInformation">
+                <div class="textInfoParts">
+                    <h2>
+                        WHO
+                    </h2>
+                    <article>
+                        Full-stack Java Developer in the largest telecommunications and internet service provider in
+                        Estonia, developing web self service portal for private and business
+                        clients in an agile team.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        WHAT
+                    </h2>
+                    <article>
+                        Day to day role was programming the back and front-end side of
+                        the web service portal while assisting project manager / product owner to make sure the
+                        project
+                        goes through its full life-cycle while providing estimations about the difficulty of each
+                        feature.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        GAINED
+                    </h2>
+                    <article>
+                        Knowledge in Java, JavaScript, JQuery, HTML, CSS, Oracle SQL database, Bootstrap, Angular,
+                        Struts,
+                        Liquibase,
+                        Hibernate, Ruby, WatirSplash, Watir/Rspec,Hudson, Atlassian Jira, Intellj Idea, Test driven
+                        development, Pair/Extreme programming, Git.
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="port slide" id="port4">
+    <div class="content">
+        <div class="portHeading">
+            <a href="javascript:void(0);"><h1>FROSTNOVA - PROJECT ENNEMUISTNE</h1>
+                <span>Sorry this page does not exist</span></a>
+
+            <h2>2011 - 2013</h2>
+        </div>
+        <div class="bonusContent">
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+
+                <p>One of the mini-games you could find in the world of Ennemuistne. These games were made for kids to
+                    learn maths, eye-to-hand coordination, memory etc. In these games, players could also compete with
+                    each other and win real life prizes.</p>
+            </div>
+            <div class="exampleInfo">
+                <a href="../HTML/valkRehnung.html" target="_blank"><img src="../IMG/valkrehnungPreview.jpg">
+
+                    <div class="play game"></div>
+                </a>
+            </div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+
+                <p>A player recorded a series of videos playing Ennemuistne with his friend. It is a good example how
+                    popular Ennemuistne became in Estonia.</p>
+            </div>
+            <div class="youtube exampleInfo" id="SoUCvbVno94" style="width:50%; height: 30%;"></div>
+            <div class="exampleInfoContainer">
+                <div class="exampleInfoContainerBG"></div>
+
+                <p>An image of the game, which shows how the world, user interface, character, inventory system,
+                    dialogue boxes, map and another mini-game looked like in the game. Professional responsibilities
+                    were programming the functionality for the previously listed game elements.</p>
+            </div>
+            <div class="exampleInfo">
+                <a href="../IMG/ennemuistne.jpg" class="exampleImg" data-lightbox="ennemuistne-examples"><img
+                        src="../IMG/ennemuistne.jpg">
+
+                    <div class="play image"></div>
+                </a>
+            </div>
+        </div>
+        <div class="workInformation">
+            <div class="textInformation">
+                <div class="textInfoParts">
+                    <h2>
+                        WHO
+                    </h2>
+                    <article>
+                        Working as a co-coordinator, game functionality and server backend developer in an Estonian
+                        EMMORPG(Educational massively multi-player online role-playing game) for kids. Project
+                        Ennemuistne won the best e-service award for cultural category in 2013.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        WHAT
+                    </h2>
+                    <article>
+                        Daily tasks included programming the games' functionality in Unity3D with JavaScript and our own
+                        server functionality in Java as well as working with and co-coordinating a small 10 people team.
+                        The team consisted of two artists, four developers, a sound technician, a project manager and
+                        two testers.
+                    </article>
+                </div>
+                <div class="textInfoParts">
+                    <h2>
+                        GAINED
+                    </h2>
+                    <article>
+                        Knowledge in Unity3D, Object-Oriented JavaScript, Java, Blender, Pivotal Tracker, MonoDevelop,
+                        Amazon Server, Audacity, Sound Design.
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="javascript:moveToContact()">
+    <div class="buttonBottom"></div>
+</a>
+</div>
+<div id="contact" class="section">
+    <div class="contactInfoContainer">
+        <ul class="contactInfo">
+            <li class="info"><h1>E-mail: Ago.Ahas@gmail.com</h1></li>
+            <li class="info"><h1>Mobile: +44 743 213 1883</h1></li>
+            <li class="info"><h1>Skype: Ago.Ahas</h1></li>
+        </ul>
+    </div>
+    <div class="socialMedia">
+        <ul>
+            <li><a class="socialMediaIcon" href="http://twitter.com/Eions" target="_blank">TWITTER</a></li>
+            <li><a class="socialMediaIcon" href="http://www.linkedin.com/pub/ago-ahas/62/6ab/989" target="_blank">LINKEDIN</a>
+            </li>
+            <li><a class="socialMediaIcon" href="http://www.youtube.com/level1ee" target="_blank">YOUTUBE</a></li>
+            <li><a class="socialMediaIcon" href="https://github.com/Anongnito" target="_blank">GITHUB</a></li>
+        </ul>
+    </div>
+    <a href="javascript:moveToPortfolio()">
+        <div id="contactTopButton" class="buttonTop"></div>
+    </a>
+
+    <h2 class="copyright">Ago Ahas, All rights reserved &copy 2015</h2>
+</div>
+</div>
+</body>
+<script src="../JS/youtube.js"></script>
+</html>
